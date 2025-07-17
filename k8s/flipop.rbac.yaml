@@ -5,7 +5,7 @@ metadata:
 rules:
 - apiGroups: [""]
   resources: ["pods", "nodes"]
-  verbs: ["get", "watch", "list"]
+  verbs: ["get", "watch", "list", "update", "patch"]
 - apiGroups: ["flipop.digitalocean.com"]
   resources: ["nodednsrecordsets"]
   verbs: ["get", "watch", "list"]
