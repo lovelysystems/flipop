@@ -27,8 +27,9 @@ spec:
             secretKeyRef:
               key: DIGITALOCEAN_ACCESS_TOKEN
               name: flipop
-        image: digitaloceanapps/flipop:latest
-        imagePullPolicy: Always
+        # use fixed tag instead of latest
+        image: digitaloceanapps/flipop:8c2ae5a # release from 09.05.2025
+        imagePullPolicy: IfNotPresent
         name: flipop
         ports:
         - containerPort: 8080
